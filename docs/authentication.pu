@@ -1,0 +1,11 @@
+@startuml name Authentication
+actor ユーザー as User
+User -> ページ : アクセス
+alt 未ログイン
+ページ -> NextAuth : 
+NextAuth -> User : NextAuth\nログイン画面をレスポンス
+User -> NextAuth : メールアドレスを入力
+NextAuth -> User : 認証メールを送信
+end
+ページ -> User : 画面をレスポンス
+@enduml
