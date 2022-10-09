@@ -1,0 +1,50 @@
+@startuml screen-transition
+start
+: インデックスページ ;
+partition ヘッダー {
+    split 
+        : ハンバーガーメニュー ;
+        split
+            : ドール一覧 ;
+            note
+                /dolls
+            end note
+            detach
+        split again
+            : ログ一覧 ;
+            note
+                /logs
+            end note
+            detach
+        end split
+    split again
+        : ロゴ ;
+            : インデックスページ ;
+            note
+                /
+            end note
+            detach
+    split again
+        : 虫眼鏡アイコン ;
+            : マニューバ検索ページ ;
+            note
+                /search
+            end note
+            detach
+    split again
+        : ハートアイコン ;
+            : お気に入り一覧ページ ;
+            note
+                /favorite
+            end note
+            detach
+    split again
+        : アカウントアイコン ;
+            : マイページ ;
+            note
+                /mypage
+            end note
+            detach
+    end split
+}
+@enduml
