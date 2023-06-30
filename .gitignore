@@ -1,2 +1,7 @@
 # node_modeule
-node_modeule/
+node_modeule
+*.log*
+.cache
+.output
+.env
+.dist
