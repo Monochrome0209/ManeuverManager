@@ -1,5 +1,6 @@
 # node_modeule
-node_modeule
+node_modules/
+
 *.log*
 .cache
 .output
