@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "docsify-cli": "^4.4.4"
+  },
+  "scripts": {
+    "preview": "docsify serve docs"
   }
 }
